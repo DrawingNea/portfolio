@@ -2,9 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import flexibbleImg from "@/public/Flexibble.png";
+import neatSeatImg from "@/public/NeatSeat.png";
 
 export const links = [
   {
@@ -58,21 +57,14 @@ export const projectsData = [
     description:
       "NeatSeat is a workplace management software designed to streamline and optimize workspace allocation, providing efficient solutions for desk assignments and organizational seating arrangements.",
     tags: ["React", "Node.js", "MDB", "Spring", "MSSQL", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: neatSeatImg,
   },
   {
     title: "Flexibble",
     description:
       "A full stack Dribble clone with all the necessary features of dribble from sharing and showcasing projects.",
     tags: ["React", "Next.js", "Next Auth", "Tailwind", "GraphQL", "Grafbase"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: flexibbleImg,
   },
 ] as const;
 
