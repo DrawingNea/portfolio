@@ -40,12 +40,16 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+      <motion.p
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
         <span className="font-bold">Hello, I'm Evelyn.</span> I'm an{" "}
         <span className="font-bold">experienced full-stack developer.</span> I
         enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
-      </p>
+      </motion.p>
     </section>
   );
 };
