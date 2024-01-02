@@ -40,7 +40,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="abosulute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2 group-even:group-hover:-translate-x-3 group-even:group-hover:-translate-y-3 group-even:group-hover:-rotate-2 group-even:right-[initial] group-even:-left-40"
+          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2 group-even:group-hover:-translate-x-3 group-even:group-hover:-translate-y-3 group-even:group-hover:-rotate-2 group-even:right-[initial] group-even:-left-40"
         />
       </section>
     </motion.div>
