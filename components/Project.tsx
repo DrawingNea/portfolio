@@ -17,7 +17,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
   return (
     <motion.div
       ref={ref}
-      style={{ scale: scrollYProgress, opacity: scrollYProgress }}
+      style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group mb-3 sm:mb-8 last:mb-0 even:pl-8"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition group-even:pl-8">
