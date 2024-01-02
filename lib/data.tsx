@@ -55,7 +55,7 @@ export const projectsData = [
   {
     title: "NeatSeat",
     description:
-      "NeatSeat is a workplace management software designed to streamline and optimize workspace allocation, providing efficient solutions for desk assignments and organizational seating arrangements.",
+      "NeatSeat is a workplace management software designed to provide efficient solutions for desk assignments and organizational seating arrangements.",
     tags: ["React", "Node.js", "MDB", "Spring", "MSSQL", "Prisma"],
     imageUrl: neatSeatImg,
   },
