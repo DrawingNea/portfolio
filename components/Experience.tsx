@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import SectionHeading from "./Section-Heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 
 const Experience = () => {
@@ -14,6 +17,7 @@ const Experience = () => {
         {experiencesData.map((experience, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              visible={true}
               contentStyle={{
                 background: "#f3f4f6",
                 boxShadow: "none",
