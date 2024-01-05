@@ -1,9 +1,20 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "./Section-Heading";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/Active-Section-Context";
 
 const About = () => {
+  const { ref, inView } = useInView();
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <motion.section
       id="about"
@@ -11,6 +22,7 @@ const About = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      ref={ref}
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
