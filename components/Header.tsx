@@ -7,7 +7,6 @@ import Link from "next/link";
 import clsx from "clsx";
 
 const Header = () => {
-  const [activeSection, setActiveSection] = useState("Home");
   return (
     <header className="z-[999] relative">
       <motion.div
