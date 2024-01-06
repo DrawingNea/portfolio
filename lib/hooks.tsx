@@ -11,4 +11,6 @@ function useSectionInView() {
       setActiveSection("About");
     }
   }, [inView, setActiveSection, timeOfLastClick]);
+
+  return ref;
 }
