@@ -9,15 +9,9 @@ import Link from "next/link";
 import { FaGithubSquare } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/Active-Section-Context";
+import { useSectionInView } from "@/lib/hooks"
 const Intro = () => {
-  const { ref, inView } = useInView({ threshold: 0.5 });
-  const { setActiveSection, timeOfLastClick} = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection("Home");
-    }
-  }, [inView, setActiveSection, timeOfLastClick]);
+  const { ref } = useSectionInView();
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0" ref={ref} id="home">
       <div className="flex items-center justify-center">

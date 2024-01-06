@@ -2,8 +2,8 @@ import { useActiveSectionContext } from "@/context/Active-Section-Context";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-function useSectionInView() {
-    const { ref, inView } = useInView();
+export function useSectionInView() {
+  const { ref, inView } = useInView();
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
@@ -12,5 +12,5 @@ function useSectionInView() {
     }
   }, [inView, setActiveSection, timeOfLastClick]);
 
-  return ref;
+  return { ref };
 }
