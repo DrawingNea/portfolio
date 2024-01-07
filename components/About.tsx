@@ -2,13 +2,10 @@
 import React, { useEffect } from "react";
 import SectionHeading from "./Section-Heading";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/context/Active-Section-Context";
 import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
   const { ref } = useSectionInView("About");
-
   return (
     <motion.section
       id="about"
