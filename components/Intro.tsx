@@ -11,7 +11,7 @@ import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/Active-Section-Context";
 import { useSectionInView } from "@/lib/hooks"
 const Intro = () => {
-  const { ref } = useSectionInView();
+  const { ref } = useSectionInView("Home", 0.5);
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0" ref={ref} id="home">
       <div className="flex items-center justify-center">
