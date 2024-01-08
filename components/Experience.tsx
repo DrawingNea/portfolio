@@ -11,15 +11,15 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 const Experience = () => {
-  const { ref } = useSectionInView("Experience");
+  const { ref, inView } = useSectionInView("Experience",0.2);
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 sm:mb-40 ">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="" animate>
         {experiencesData.map((experience, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-              visible={true}
+            visible={inView}
               contentStyle={{
                 background: "#f3f4f6",
                 boxShadow: "none",
