@@ -53,7 +53,7 @@ const Contact = () => {
           name="senderMessage"
           placeholder="Your message"
           required
-          maxLength={500}
+          maxLength={5000}
         />
         <button
           type="submit"
