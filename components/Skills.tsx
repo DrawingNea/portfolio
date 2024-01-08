@@ -35,7 +35,6 @@ const Skills = () => {
             className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
             variants={fadeInAnimationVariants}
             initial="initial"
-            animate="animate"
             whileInView="animate"
             viewport={{
               once: true,
