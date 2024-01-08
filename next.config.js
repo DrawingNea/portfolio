@@ -10,7 +10,6 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/portfolio',
 };
 
 module.exports = nextConfig;
