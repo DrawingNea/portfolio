@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
-import ActiveSectionContext, { useActiveSectionContext } from "@/context/Active-Section-Context";
+import { useActiveSectionContext } from "@/context/Active-Section-Context";
 
 const Header = () => {
   const {activeSection, setActiveSection, setTimeOfLastClick} = useActiveSectionContext();
