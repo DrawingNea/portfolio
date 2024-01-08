@@ -7,6 +7,9 @@ const nextConfig = {
                 hostname: "media.licdn.com"
             }
         ]
+    },
+    experimental:{
+        serverActions: true,
     }
 }
 
