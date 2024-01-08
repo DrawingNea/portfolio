@@ -8,10 +8,6 @@ const nextConfig = {
             }
         ]
     },
-    experimental:{
-        serverActions: true,
-    },
-    output: "export",
 }
 
 module.exports = nextConfig
