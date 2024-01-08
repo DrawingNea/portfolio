@@ -9,7 +9,8 @@ import SubmitBtn from "./Submit-Btn";
 import toast from "react-hot-toast";
 
 const Contact = () => {
-  const { ref } = useSectionInView("Contact");
+  // Change to "Contact" when as section name for navlinks
+  const { ref } = useSectionInView("Home");
 
   return (
     <motion.section
