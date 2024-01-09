@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/Theme-Context";
 
 const Experience = () => {
-  const { ref, inView } = useSectionInView("Experience",0.2);
+  const { ref, inView } = useSectionInView("Experience", 0.2);
   const { theme } = useTheme();
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 sm:mb-40 ">
@@ -21,24 +21,27 @@ const Experience = () => {
         {experiencesData.map((experience, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-            visible={inView}
+              visible={inView}
               contentStyle={{
-                background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                background:
+                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0,0,0,0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: theme === "light"
-                ? "0.4rem solid #9ca3af"
-                : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                borderRight:
+                  theme === "light"
+                    ? "0.4rem solid #9ca3af"
+                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={experience.date}
               icon={experience.icon}
               iconStyle={{
                 background: theme === "light" ? "white" : "#414652",
                 fontSize: "1.5rem",
+                boxShadow: theme === "light" ? "" : "0 0 0 4px #1a202c",
               }}
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
