@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import flexibbleImg from "@/public/Flexibble.png";
 import neatSeatImg from "@/public/NeatSeat.png";
+import carHubImg from "@/public/CarHub.png";
 
 export const links = [
   {
@@ -66,6 +67,13 @@ export const projectsData = [
       "A full stack Dribble clone with all the necessary features of dribble from sharing and showcasing projects.",
     tags: ["React", "Next.js", "Next Auth", "Tailwind", "GraphQL", "Grafbase"],
     imageUrl: flexibbleImg,
+  },
+  {
+    title: "CarHub",
+    description:
+      "A Car Showcase website that presents various car types, showcasing comprehensive information in a well-designed format.",
+    tags: ["React", "Next.js", "Tailwind"],
+    imageUrl: carHubImg,
   },
 ] as const;
 
